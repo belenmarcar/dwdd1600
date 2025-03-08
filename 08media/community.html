@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Belen Martinez">
+    <meta name="description" content="Recipes from the Ecuadorian Cuisine">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="recipes.css">
+    <title>ECUADORIAN COMFORT</title>
+</head>
+
+<body>
+    <!--start the page head-->
+    <header>
+        <img src="images/logo.png" alt="site logo" width="100" height="100">
+        <div>
+            <span>ECUADORIAN COMFORT</span>
+        </div>
+    
+    </header>
+
+    <!--start the page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li class="active"><a href="community.html">Community</a></li>
+            <li><a href="shop.html">Shop</a></li>
+
+        
+        </ul>
+    </nav>
+    <!--start the main content-->
+    <main>
+        <h1>Community</h1>
+        <h2>Subscribe to the ECUADORIAN COMFORT newsletter!</h2>
+        <p>Every Monday morning, just when most of us are groaning our way back into the weekday grind, I send out a newsletter full of seasonal meal ideas, archive favorites, food links from around the web, a round-up of sales in products you might have missed the week before and event announcements, when relevant.</p>
+
+        <form method="get" class="myForm" action="thanks.html">
+            <!-- Personal Information Fieldset -->
+            <fieldset class="fieldset-group">
+                <legend>Personal Information</legend>
+                
+                <!-- First Name (Text Input) -->
+                <label>First Name:
+                    <input type="text" name="firstName" required>
+                </label>
+            
+                <!-- Last Name (Text Input) -->
+                <label>Last Name:
+                    <input type="text" id="lastName" name="lastName" required>
+                </label>
+            </fieldset>
+        
+            <!-- Contact Information Fieldset -->
+            <fieldset class="fieldset-group">
+                <legend>Contact Information</legend>
+                
+                <!-- Email (Email Input) -->
+                <label>Email Address:
+                    <input type="email"name="email" required>
+                </label>
+            
+                <!-- Phone Number (Tel Input) -->
+                <label>Phone Number:
+                    <input type="tel"name="phone" required placeholder="(123) 456-7890">
+                </label>
+            </fieldset>
+        
+            <!-- Meal Preferences Fieldset -->
+            <fieldset class="fieldset-group">
+                <legend>Meal Preferences</legend>
+        
+                <!-- Checkboxes for different food types -->
+                <div class="meal-type-box">
+                    <label>
+                        <input type="checkbox" name="mealType" value="vegetarian">
+                        Vegetarian
+                    </label>
+        
+                    <label>
+                        <input type="checkbox" name="mealType" value="nonVegetarian">
+                        Non-Vegetarian
+                    </label>
+        
+                    <label>
+                        <input type="checkbox" name="mealType" value="vegan">
+                        Vegan
+                    </label>
+        
+                    <label>
+                        <input type="checkbox" name="mealType" value="glutenFree">
+                        Gluten-Free
+                    </label>
+                </div>
+            </fieldset>
+        
+            <!-- Region Fieldset -->
+            <fieldset class="fieldset-group">
+                <legend>Choose your preferred region</legend>
+                
+                <!-- Region selection dropdown -->
+                <label>Select Region:
+                    <select name="region" required>
+                        <option value="" disabled selected>Select a region</option>
+                        <option value="coast">Coast</option>
+                        <option value="highlands">Highlands</option>
+                        <option value="amazon">Amazon</option>
+                        <option value="galapagosIslands">Galapagos Islands</option>
+                    </select>
+                </label>
+            </fieldset>
+        
+            <!-- Additional Information Fieldset -->
+            <fieldset class="fieldset-group">
+                <legend>Additional Comments</legend>
+                <label>Your Comments:
+                    <textarea name="comments" rows="4" cols="50" placeholder="Share your thoughts here..."></textarea>
+                </label>
+            </fieldset>
+        
+            <!-- Subscription Confirmation Fieldset -->
+            <fieldset class="fieldset-group">
+                <legend>Subscription Confirmation</legend>
+                <label>
+                    <input type="checkbox" name="newsletterConfirmation" required>
+                    By subscribing, you authorize us to email you.
+                </label>
+            </fieldset>
+        
+            <input type="submit" value="Subscribe">
+        </form>
+
+    </main>
+    <!--start the page footer-->
+    <footer>
+        <h1>"Since 1997, Ecuadorian flavors have been passed through generations to create the ultimate resource for home cooks, offering authentic recipes, cooking tips, and videos to help you bring the vibrant tastes of Ecuador into your kitchen."</h1>
+
+        <p>&copy;2025 &bull; Belen Martinez &bull; Web Essentials</p>
+    </footer>
+
+</body>
+
+</html>
