@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Belen Martinez">
+    <meta name="description" content="Diablo Huma Adventures Vacation Agency">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+    <!-- External CSS -->
+    <link rel="stylesheet" href="vacation.css">
+  
+    <title>DIABLO HUMA ADVENTURES</title>
+  </head>
+
+<body>
+    <!--start the page head-->
+    <header>
+        <img src="images/logo.gif" alt="site logo" width="100" height="100">
+        <div>
+            <span>DIABLO HUMA ADVENTURES</span>
+        </div>
+    
+    </header>
+
+    <!--start the page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destination.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li class="active"><a href="contactus.html">Contact Us</a></li>
+
+    
+        </ul>
+
+    </nav>
+    <!--start the main content-->
+    <main>
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Whether you have questions or need assistance with planning your Ecuadorian adventure, our team is here to help.</p>
+    
+        <section class="contact-info">
+            <h2>Our Office Location</h2>
+            <!-- Embedded Google Map -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255347.01839045493!2d-78.43053819999999!3d-0.18659435000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a4002427c9f%3A0x44b991e158ef5572!2sQuito%2C%20Ecuador!5e0!3m2!1sen!2sus!4v1745294900945!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </iframe>
+            </div>
+    
+            <h3>Contact Details:</h3>
+            <ul>
+                <li><strong>Phone:</strong> +593 2 345 6789</li>
+                <li><strong>Email:</strong> <a href="mailto:info@diablohumaadventures.com">info@diablohumaadventures.com</a></li>
+            </ul>
+    
+            <h3>Follow Us on Social Media:</h3>
+            <ul>
+                <li><strong>Instagram & TikTok:</strong> @DiabloHumaAdventures</li>
+                <li><strong>Facebook:</strong> <a href="https://www.facebook.com/DiabloHumaAdventures" target="_blank">Diablo Huma Adventures</a></li>
+            </ul>
+        </section>
+    
+        <section class="get-in-touch">
+            <h2>Get in Touch</h2>
+            <p>Have questions? Want to customize your perfect trip? Our friendly team is ready to help. Fill out the form, and let’s start planning your Ecuadorian adventure today!</p>
+            
+            <form action="submit_form.php" method="POST">
+                <!-- Contact Information Fieldset -->
+                <fieldset class="fieldset-group">
+                    <legend>Contact Information</legend>
+        
+                    <!-- Email (Email Input) -->
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email" id="email" required placeholder="youremail@example.com">
+        
+                    <!-- Phone Number (Tel Input) -->
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" required placeholder="(123) 456-7890">
+                </fieldset>
+                
+                <!-- Trip Customization Fieldset -->
+                <fieldset class="fieldset-group">
+                    <legend>Customize Your Trip</legend>
+        
+                    <!-- Dropdown for Interests -->
+                    <label for="interest">What are you most interested in?:</label>
+                    <select name="interest" id="interest" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="cultural">Cultural Experiences</option>
+                        <option value="eco-tourism">Eco-tourism</option>
+                        <option value="beach-relaxation">Beach Relaxation</option>
+                        <option value="wellness">Wellness & Spa</option>
+                        <option value="family-friendly">Family-friendly Activities</option>
+                        <option value="wildlife">Wildlife & Nature</option>
+                        <option value="luxury">Luxury Travel</option>
+                    </select>
+        
+                    <!-- Textarea for specific trip requests -->
+                    <label for="trip-request">Describe your ideal trip (optional):</label>
+                    <textarea name="trip-request" id="trip-request" rows="4" cols="50" placeholder="Tell us what your dream trip looks like..."></textarea>
+                </fieldset>
+        
+                <!-- Additional Information Fieldset -->
+                <fieldset class="fieldset-group">
+                    <legend>Additional Comments</legend>
+                    <label for="comments">Your Comments:</label>
+                    <textarea name="comments" id="comments" rows="4" cols="50" placeholder="Share your thoughts or any special requests here..."></textarea>
+                </fieldset>
+    
+                <input type="submit" value="Submit ">
+            </form>
+        </section>
+        
+    </fieldset>
+            </form>
+        </section>
+    </main>
+    
+    
+    
+   
+    </main>
+
+    
+    <!--start the page footer-->
+    <footer>
+        <h1> Unmask the Magic of Ecuador!</h1>
+
+        <p>&copy;2025 &bull; Belen Martinez &bull; Web Essentials</p>
+    </footer>
+
+</body>
+
+</html>
